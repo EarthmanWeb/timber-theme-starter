@@ -1,0 +1,20 @@
+// ==== STYLES ==== //
+/*!
+Theme Name: themeName
+Theme URI: themeUri
+Author: themeAuthor
+Description: themeDescription
+Version: themeVersion
+*/
+
+// Normalize: make browsers render things more consistently
+@import 'normalize';
+
+@import 'variables';
+@import 'base';
+
+// Components: Modular elements styles
+@import 'components/nav';
+
+// Pages: Import every page that has its own specific styles
+@import 'pages/home';
