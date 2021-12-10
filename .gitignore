@@ -1,0 +1,6 @@
+.DS_Store
+build/
+dist/
+wp-content/
+node_modules
+vendor

@@ -1,0 +1,15 @@
+<div class="blog-comment {{comment.comment_type}}" id="blog-comment-{{comment.ID}}">
+	<h6 class="comment-author">{{comment.author.name}}
+		said:</h6>
+	<div class="comment-content">{{comment.comment_content|wpautop}}</div>
+	<!-- child comments -->
+	{% if post.comments[0].children  %}
+		<h4>Replies
+		</h4>
+		<div class="comments">
+			{% for cmt in comment.children %}
+				{% include "partial/comment-replies.twig" with {comment:cmt} %}
+			{% endfor %}
+		</div>
+	{% endif %}
+</div>
